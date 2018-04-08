@@ -28,10 +28,6 @@ VOLUME ["/srv/haraka"]
 
 EXPOSE 25:25 587:587 465:465
 
-COPY srv /srv/
-
-COPY etc /etc/
-
 COPY opt /opt/
 
 CMD ["sh", "/opt/start.sh", "-bash"]
