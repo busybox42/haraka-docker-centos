@@ -15,7 +15,7 @@ Now that we have the image busybox42/haraka-docker-centos we can create the cont
 ```bash
 docker run --name haraka -p 25:25 -p 587:587 -p 465:465 -h mail.myhost.tld busybox42/harka_docker_centos
 ```
-Name the container, expose the mail portsand set a hostname.
+Name the container, expose the mail ports and set a hostname.
 
 ## Configuring your server
 The server has installed under /srv/haraka.  You will need to modify the configuration for your installation.  Please see read the Haraka manual for more information: https://haraka.github.io/README.html
