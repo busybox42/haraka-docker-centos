@@ -20,6 +20,7 @@ RUN yum install -y epel-release && yum update -y --nogpgcheck && yum install -y 
   net-tools \
   telnet \
   git \
+  p0f \
   && yum clean all \
   && yum clean metadata \
   && /usr/bin/npm install Haraka
