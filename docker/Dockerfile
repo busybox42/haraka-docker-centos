@@ -24,6 +24,7 @@ RUN yum install -y epel-release && yum update -y --nogpgcheck && yum install -y 
   bsdtar \
   && yum clean all \
   && yum clean metadata \
+  && /usr/bin/npm install -g express \
   && /usr/bin/npm install Haraka
 
 VOLUME ["/srv/haraka"]
